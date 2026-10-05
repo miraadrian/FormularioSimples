@@ -22,11 +22,11 @@
     
     <form action="/" method="POST" class='formulario'>
       <label>Nome</label>
-      <input type="text" class="nome validar">
+      <input type="text" class="nome validar" oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '')">
       <label>Sobrenome</label>
-      <input type="text" class="sobrenome validar">
+      <input type="text" class="sobrenome validar" oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '')">
       <label>CPF</label>
-      <input type="text" class="cpf validar">
+      <input type="text" class="cpf validar" placeholder="modelo XXX-XXX-XXX-XX">
       <label>Usuário</label>
       <input type="text" class="usuario validar">
       <label>Senha</label>
